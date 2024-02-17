@@ -1,0 +1,17 @@
+@import url('shop.html');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.btn {
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: 0 0 40px #686072;
+    font-size: larger;
+    color: #fff;
+    cursor: pointer;
+}

@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Title Page</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }  
+                body{
+                margin: 0px;
+                background-size: 1290px 580px;
+                height: 100px;
+                }
+                .cc1{
+                    position: relative;
+                    top: 0px;
+                    display: inline;
+                }
+                img{
+                    height: 40px;
+                    width: 45px;
+                    display: inline-block;
+                    position: relative;
+                    left: 565px;
+                    color: #000;
+                    background-color: black;
+                }
+                h2{
+                    display: inline-block;
+                    position: relative;
+                    left: 585px;
+        
+                }
+        
+                .c1{
+                    position: relative;
+                    display:inline-block;
+                    margin: 10px;
+                    padding: 10px;
+                    font-size: large;
+                    color: #000;
+                
+                }
+                .c2{
+                    display: inline-block;
+                    position: relative;
+                    left: 200px;
+                    font-size: large;
+                    /*display: inline-block;
+                    padding: 50px;
+                    margin: 25px;
+                    text-size-adjust: 40px;
+                    font-size: 30px;*/
+                }
+                .r1{
+                    position: relative;
+                    top: 60px;
+                }
+                .card{
+                    width: 400px;
+                    background-color: #fff;
+                    border-radius: 5px;
+                    padding: 20px;
+                    box-shadow: 0px 9px 20px 0px rgba(14, 88, 48, 0.1);
+                }
+                h4{
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #000;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+                .price-content{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 0px 10px;
+                }
+                label{
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                p{
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                .range-slider{
+                    width: 400px;
+                    position: relative;
+                    margin: 15px 0 30px 0;
+                }
+                .range-fill{
+                    height: 6px;
+                    background-color: white;
+                    position: absolute;
+                    z-index: 1;
+                }
+                input[type="range"]{
+                    -webkit-appearance: none;
+                    width: 100%;
+                    background: transparent;
+                    position: relative;
+                    left: 0;
+                }
+                input[type="range"]::-webkit-slider-thumb{
+                    -webkit-appearance: none;
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 50%;
+                    background-color: black;
+                    cursor: pointer;
+                    margin-top: -5px;
+                    position: relative;
+                    z-index: 1;
+                }
+                input[type="range"]::-webkit-slider-runnable-track{
+                    width: 100%;
+                    height: 5px;
+                    background: #e8e8e8;
+                    border-radius: 3px;
+                    border: none;
+                }
+
+                .r2{
+                    top: 850px;
+                    position: relative;
+                   
+
+                }
+                .r13{
+                    top: 1400px;
+                    position: relative;
+                 
+                }
+                .r4{
+                    top: 1600px;
+                    position: relative;
+                }
+                </style>
+    </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <script src="script.js"></script>
+                 <ul class="cc1">
+                <li class="c1"><a href="home.html">Home</a></li>
+                <li class="c1"><a href="shop.html">Shop</a></li>
+                <li class="c1"><a href="about.html">About</a></li>
+                <li class="c1"><a href="contact.html">Contact </a></li>
+                <li class="c2"> <h3>Flawless</h3></li>
+                <img src="images/user.logo.jpg" alt="" srcset="">
+                <h2>$0.00</h2>
+                <img src="images/shoplogo.png" alt="" style="height: 50px; width: 60px; left: 600px; display: inline-block;">
+                <hr>
+            </ul>
+    
+            <div class="r1">
+                 
+                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="card">
+                        <h4>Filter By Choice</h4>
+                        <div class="price-content">
+                            <div>
+                                <label>Min</label>
+                                <p id="min-value">$10</p>
+                            </div>
+                            <div>
+                                <label>Max</label>
+                                <p id="max-value">$50</p>
+                            </div>
+                        </div>
+                        <input
+                        type="range"
+                        class="min-price"
+                        value="10"
+                        min="10"
+                        max="50"
+                        step="10"
+                        />
+                        <input
+                        type="range"
+                        class="max-price"
+                        value="50"
+                        min="10"
+                        max="50"
+                        step="50"
+                        />
+                        <button style="position: relative;
+                        background-color: white;
+                        color: red;
+                        font-size: large;
+                        padding: 5px;
+                        margin: 10px;">Filter</button>
+                        <p style="position: relative; right: -250px; top: -40px;">Price:$10-$50</p>
+                    </div>
+                 </div>
+                 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                    <p style="position: relative; left: 100px; color: grey;">Home/Shop</p>
+                    <p>Showing 13-14 of 14 results</p>
+                 </div>  
+                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <p style="position: relative; left: 650px; color: black; top: -40px;">Default Sorting </p>
+                    <img src="images/cleanser5.jpg" alt="" style="position: relative; left: 10px; height: 300px; width: 200px;">
+                    <p style="position: relative; color: gray; left: 20px;">Cleanser</p>
+                    <p style="position: relative; color: #000; left: 10px;">Refreshing Cleansing Balm</p>
+                    <p style="position: relative; color: #000; left: 10px;">$44.00</p>
+
+                    <img src="images/sunscreen.jpg" alt="" style="position: relative; left: 300px; height: 300px; width: 200px; top: -400px;">
+                    <p style="position: relative; color: gray; left: 300px; top: -400px;">Sunscreen</p>
+                    <p style="position: relative; color: #000; left: 300px; top: -400px;">Smoothing Sunscreen Gel</p>
+                    <p style="position: relative; color: #000; left: 300px; top: -400px;">$24.50</p>
+
+                    
+                <a class="btn btn-link" href="shop.html" role="button" style="position: relative; top: -200px; left: 70px; color: red; background-color: black;">1</a>
+                <a class="btn btn-link" href="buttonpage2.html" role="button" style="position: relative; top: -200px; left: 100px; color: red; background-color: black;">2</a>
+                <a class="btn btn-link" href="shop.html" style="position: relative; top: -200px; left: -120px; color: red; background-color: black;  padding: 13px 20px;
+                border: 1px solid #fff;
+                outline: none;
+                border-radius: 8px;
+                box-shadow: 0 0 40px #686072;
+                font-size: larger;
+                cursor: pointer;" ><</a>
+            </div>
+
+            <div class="r2">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            
+                    <img src="images/delivery.jpg" alt="" style="position: relative; height: 80px; width: 50px; left: -840px;">
+                    <p style="position: relative; font-size: larger; left: -780px; top: -80px; font-style: italic;">Free Delivery</p>
+                    <p style="position: relative; font-size: medium; left: -780px; top: -80px; font-style: italic;">Nullam pharetra egestas mollis</p>
+            
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    
+                    <img src="images/payment.jpg" alt="" style="position: relative; height: 80px; width: 50px; top: -160px; left: -500px;">
+                    <p style="position: relative; font-size: larger; left: -445px; top: -230px; font-style: italic;">Easy Payment</p>
+                    <p style="position: relative; font-size: medium; left: -445px; top: -230px; font-style: italic;">Urna est enim pellentesque</p>
+            
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    
+                    <img src="images/track order.jpg" alt="" style="position: relative; height: 80px; width: 50px;top: -310px; left: -220px;">
+                    <p style="position: relative; font-size: larger; left: -170px; top: -380px; font-style: italic;">Track Order</p>
+                    <p style="position: relative; font-size: medium; left: -170px; top: -380px; font-style: italic;">Mauris lacus nunc pellentesque</p>
+            
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    
+                    <img src="images/have queston.jpg" alt="" style="position: relative; height: 80px; width: 50px;top: -460px; left: 100px;" >
+                    <p style="position: relative; font-size: larger; left: 150px; top: -530px; font-style: italic;">Have Question</p>
+                    <p style="position: relative; font-size: medium; left: 150px; top: -530px; font-style: italic;">Vulputate enim quis sollicitudin
+                    </p>
+                </div>
+                </div>
+                <hr>
+            </div>
+            <hr>
+
+
+            <div class="r13">
+                <p style="position: relative; font-size: x-large;left: -650px; font-style: inherit; top: -250px;">Flawless</p>
+        
+        
+                <li class="c1" style="position: relative; font-size: larger; left: -900px; font-style: inherit; top: -200px;"><a href="home.html">Home</a></li>
+                <li class="c1" style="position: relative; font-size: larger; left: -700px; font-style: inherit; top: -265px;"><a href="shop.html">Shop</a></li>
+                <li class="c1"style="position: relative; font-size: larger; left: -500px; font-style: inherit; top: -330px;"><a href="about.html">About</a></li>
+                <li class="c1" style="position: relative; font-size: larger; left: -300px; font-style: inherit; top: -390px;"><a href="contact.html">Contact </a></li>
+
+
+                <img src="images/instagram logo.png" alt="" style="position: relative; left: -750px; top: -300px;height: 40px; width: 30px; ">
+                <img src="images/facebook logo.png" alt="" style="position: relative; left: -600px; top: -300px;height: 50px; width: 30px;">
+                <img src="images/twitter logo.png" alt="" style="position: relative; left: -480px; top: -300px;height: 50px; width: 30px;">
+            </div>
+            <hr>
+        
+
+            <div class="r4">
+                <p style="position: relative; top: -400px; left: -400px; margin: 30px; text-align: center;">© 2024 Skin Cleanser Store Powered by Skin Cleanser Store.</p>
+
+            </div>
+                 
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>
